@@ -6,7 +6,7 @@ services:
     volumes:
       - ./laravel-app:/var/www/html
     ports:
-      - 9000:80
+      - 8088:80
 
   mysql_db:
     image: mysql:latest
@@ -16,7 +16,7 @@ services:
       MYSQL_USER: custom_user              # 設置普通用戶名稱
       MYSQL_PASSWORD: custom_pass          # 設置普通用戶密碼
     ports:
-      - 3306:3306
+      - 3308:3306
 
   phpmyadmin:
     image: phpmyadmin:latest
